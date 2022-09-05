@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class=" container d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <span class="fs-4">Kravchenko Cosmetology</span>
+
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/about">Про нас</a>
+          <a class="me-3 py-2 text-dark text-decoration-none" href="/posts">Посты</a>
+      </nav>
+        <a class="btn btn-warning" href="/create-article">Создать</a>
+    </div>
+
+
+
+    {% block body %}{% endblock %}
+
+
+    <footer class=" container pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+        <small class="d-block mb-3 text-muted">© 2015–2022</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Интерактив</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Фотогалерея</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Фидеогалерея</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">До\После</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Фото отзывы клиентов</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Наши фото</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Наша история</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Контакты</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://instagram.com/cosmetology.kravchenko?igshid=YmMyMTA2M2Y=">Инстаграмм</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Вконтакте</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Телеграмм</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Телефон</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>О нас</h5>
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="/about">Наша команда</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Адреса клиник</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Нормативная документация</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Обратная связь</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
